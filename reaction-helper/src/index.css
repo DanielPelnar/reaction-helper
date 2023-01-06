@@ -1,1 +1,28 @@
+body {
+  background-color: #f7f7f7;
+}
 
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.arena123_target {
+  font-weight: bold;
+  color: #333333;
+  display: block;
+  /* font-size: 20rem; */
+  font-size: 13vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.action {
+  color: #003366;
+  display: block;
+  /* font-size: 10rem; */
+  font-size: 9vw;
+  font-family: Futura, serif;
+}

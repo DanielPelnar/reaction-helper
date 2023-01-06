@@ -18,24 +18,6 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
-  // useEffect(() => {
-  //   const handleWheel = (event) => {
-  //     if (event.metaKey || event.ctrlKey) {
-  //       if (event.deltaY < 0) {
-  //         document.body.style.backgroundColor = 'red';
-  //       } else if (event.deltaY > 0) {
-  //         document.body.style.backgroundColor = 'blue';
-  //       }
-  //     }
-  //   };
-
-  //   document.addEventListener('wheel', handleWheel);
-
-  //   return () => {
-  //     document.removeEventListener('wheel', handleWheel);
-  //   };
-  // }, []);
-
   // Set the overflow property to 'hidden' to prevent the page from scrolling
   document.documentElement.style.overflow = 'hidden';
 

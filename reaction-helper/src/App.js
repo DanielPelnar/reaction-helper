@@ -1,33 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import './index.css';
-
-// (event.metaKey || event.ctrlKey)
-// (event.key === 'Ctrl' || event.key === 'Meta')
-const list = ["TARGET", "CASTING", "CC", "FOCUS"];
+import React, { useState } from "react";
+import "./index.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Practice from "./pages/Practice";
 
 function App() {
-  const [action, setAction] = useState('');
-  const [target, setTarget] = useState("Beginning in 5 seconds...");
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const index = Math.floor(Math.random() * list.length);
-      setAction(list[index]);
-      setTarget(Math.floor(Math.random() * 3) + 1);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  // Set the overflow property to 'hidden' to prevent the page from scrolling
-  document.documentElement.style.overflow = 'hidden';
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [selectTime, setSelectTime] = useState(4000);
 
   return (
-      <div className="center">
-        <div className="arena123_target">{target}</div>
-        <div className="action">{action}</div>
-      </div>
+    <Routes>
+      <Route
+        index
+        element={
+          <Home
+            selectedOptions={selectedOptions}
+            setSelectedOptions={setSelectedOptions}
+            selectTime={selectTime}
+            setSelectTime={setSelectTime}
+          />
+        }
+      />
+      <Route
+        path="practice"
+        element={
+          <Practice selectedOptions={selectedOptions} selectTime={selectTime} />
+        }
+      />
+    </Routes>
   );
-
 }
 
 export default App;

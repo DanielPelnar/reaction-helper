@@ -2,6 +2,7 @@ body {
   background-color: #f7f7f7;
 }
 
+/* PRACTICE page */
 .center {
   position: absolute;
   top: 50%;
@@ -14,7 +15,6 @@ body {
   font-weight: bold;
   color: #333333;
   display: block;
-  /* font-size: 20rem; */
   font-size: 13vw;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -22,7 +22,138 @@ body {
 .action {
   color: #003366;
   display: block;
-  /* font-size: 10rem; */
   font-size: 9vw;
   font-family: Futura, serif;
+}
+
+/* HOME page */
+.home-page-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1 {
+  color: #003366;
+  display: block;
+  font-size: 3vw;
+  font-family: Futura, serif;
+  margin-top: 1rem;
+}
+
+h3 {
+  color: #003366;
+  display: block;
+  font-size: 1.5vw;
+  font-family: Futura, serif;
+}
+
+.text, ul, option {
+  /* font-weight: bold; */
+  color: #333333;
+  display: block;
+  font-size: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text2 {
+  font-weight: bold;
+  color: #333333;
+  display: block;
+  font-size: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
+}
+
+.select1 {
+  display: block;
+  margin: auto;
+  border: 2px solid #003366;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 0.4rem;
+}
+
+select:hover,
+select:focus,
+select:active,
+select:checked {
+  border: 2px solid #003366;
+}
+
+option:hover,
+option:focus,
+option:active,
+option:checked {
+  background-color: #0033663f;
+}
+
+.select2 {
+  margin: 0rem 0.3rem;
+  border: 2px solid #003366;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 5.5rem;
+  height: 2rem;
+}
+
+button {
+  display: block;
+  margin: auto;
+  background-color: #003366;
+  color: white;
+  font-size: 1.5vw;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+  margin-top: 20%;
+}
+
+button:hover {
+  background-color:  #00336676;
+}
+
+button:active {
+  background-color:  #003366;
+}
+
+button:disabled {
+  opacity: 30%;
+  cursor: not-allowed;
+}
+
+button:active {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  color: #FF9933; 
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #003366; 
+  text-decoration: underline;
+}
+
+
+a:active {
+  color: #003366; 
+}
+
+
+/* To get two divs on the same line: */
+.div-container {
+  display: flex; /* use a flexbox layout */
+  flex-wrap: wrap; /* wrap the divs to the next line if necessary */
+}
+
+.div-rows {
+  width: 50%; /* specify a width for each div */
+  box-sizing: border-box; /* include padding and border in the width */
 }

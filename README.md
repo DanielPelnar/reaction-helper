@@ -1,5 +1,5 @@
 # Web Application: Practice Keybinds for WoW Arena
-* I explain the app on reddit post: https://www.reddit.com/r/worldofpvp/comments/104zpds/there_are_just_not_enough_players_wanting_to_play/
+* App explanation: https://www.reddit.com/r/worldofpvp/comments/104zpds/there_are_just_not_enough_players_wanting_to_play/
 * Link to try: https://reaction-helper.web.app/
 
 # Do-to:
